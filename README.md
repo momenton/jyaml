@@ -1,4 +1,4 @@
-[![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)](https://github.com/emersion/stability-badges#unstable)
+[![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://github.com/emersion/stability-badges#stable)
 
 # JYAML - JMeter Markup Language
  Jyaml /ˈjaməl/ is a markup language for Jmeter allowing Jmeter scripts to be described with YAML.
