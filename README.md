@@ -17,7 +17,7 @@
 
 To compile:
 ```
-git clone https://github.com/dreading/jyaml.git
+git clone https://github.com/momenton/jyaml.git
 cd jyaml
 gradlew clean compileJava
 ```
