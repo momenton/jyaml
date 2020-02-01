@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
 
+import au.com.momenton.jyaml.parser.YamlParser;
+
 class JmxBuilder {
 
     static final Logger logger = LogManager.getLogger(JmxBuilder.class.getName());
@@ -33,15 +35,15 @@ class JmxBuilder {
         JMeterUtils.setJMeterHome(args.jmeterHome);
         JMeterUtils.initLocale();
 
-        String outputFileName = args.outputFileName;
-        InputStream inputstream = new FileInputStream("./test.yaml");
+        String outputFileName = args.output;
+        InputStream inputstream = new FileInputStream(args.input);
         Map<String, Object> yaml = (new Yaml()).load(inputstream);
 
         HashTree jmxRoot = YamlParser.parse(yaml);
 
         try {
             SaveService.loadProperties();
-            SaveService.saveTree(jmxRoot, new FileOutputStream(outputFileName + ".jmx"));
+            SaveService.saveTree(jmxRoot, new FileOutputStream(outputFileName));
         } catch (IOException ex) {
             logger.error("Failed to build jmx file");
         }

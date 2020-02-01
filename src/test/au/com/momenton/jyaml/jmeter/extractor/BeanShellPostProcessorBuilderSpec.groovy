@@ -1,7 +1,7 @@
 package au.com.momenton.jyaml.jmeter.extractor
 
 import au.com.momenton.jyaml.JMeterTestUtils
-import au.com.momenton.jyaml.YamlParser
+import au.com.momenton.jyaml.parser.YamlParser
 import au.com.momenton.jyaml.jmeter.extractor.BeanShellPostProcessorBuilder
 import org.apache.jmeter.extractor.BeanShellPostProcessor
 import org.apache.jorphan.collections.HashTree

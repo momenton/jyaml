@@ -1,7 +1,7 @@
 package au.com.momenton.jyaml.jmeter.threads
 
 import au.com.momenton.jyaml.JMeterTestUtils
-import au.com.momenton.jyaml.YamlParser
+import au.com.momenton.jyaml.parser.YamlParser
 import org.apache.jmeter.reporters.ResultCollector
 import com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup;
 import org.apache.jorphan.collections.HashTree

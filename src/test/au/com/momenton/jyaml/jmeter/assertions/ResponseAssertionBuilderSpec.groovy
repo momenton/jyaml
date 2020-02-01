@@ -1,7 +1,7 @@
 package au.com.momenton.jyaml.jmeter.assertions
 
 import au.com.momenton.jyaml.JMeterTestUtils
-import au.com.momenton.jyaml.YamlParser
+import au.com.momenton.jyaml.parser.YamlParser
 import org.apache.jmeter.assertions.ResponseAssertion
 import org.apache.jorphan.collections.HashTree
 import org.yaml.snakeyaml.Yaml

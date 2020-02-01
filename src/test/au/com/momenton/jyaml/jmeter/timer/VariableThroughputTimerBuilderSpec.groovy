@@ -1,7 +1,7 @@
 package au.com.momenton.jyaml.jmeter.timer
 
 import au.com.momenton.jyaml.JMeterTestUtils
-import au.com.momenton.jyaml.YamlParser
+import au.com.momenton.jyaml.parser.YamlParser
 import kg.apc.jmeter.timers.VariableThroughputTimer
 import org.apache.jorphan.collections.HashTree
 import org.yaml.snakeyaml.Yaml

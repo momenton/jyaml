@@ -23,17 +23,16 @@ import au.com.momenton.jyaml.jmeter.sampler.HTTPSamplerProxyBuilder;
 import au.com.momenton.jyaml.jmeter.sampler.JDBCSamplerBuilder;
 import au.com.momenton.jyaml.jmeter.sampler.JSR223SamplerBuilder;
 import au.com.momenton.jyaml.jmeter.testelement.TestPlanBuilder;
+import au.com.momenton.jyaml.jmeter.threads.ConcurrencyThreadGroupBuilder;
 import au.com.momenton.jyaml.jmeter.threads.ThreadGroupControllerBuilder;
 import au.com.momenton.jyaml.jmeter.timer.ConstantThroughputTimerBuilder;
 import au.com.momenton.jyaml.jmeter.timer.ConstantTimerBuilder;
 import au.com.momenton.jyaml.jmeter.timer.VariableThroughputTimerBuilder;
 import au.com.momenton.jyaml.jmeter.visualizers.BackendListenerBuilder;
-import au.com.momenton.jyaml.jmeter.threads.ConcurrencyThreadGroupBuilder;
 
 public class BuilderFactory {
 
     public static Builder getBuilder(String name) {
-
         if (name.equals("TestPlan")) {
             return new TestPlanBuilder();
         } else if (name.equals("ThreadGroup")) {
@@ -50,8 +49,6 @@ public class BuilderFactory {
             return new JSR223AssertionBuilder();
         } else if (name.equals("JSONPathAssertion")) {
             return new JSONPathAssertionBuilder();
-        } else if (name.equals("JSR223Assertion")) {
-            return new JSR223AssertionBuilder();
         } else if (name.equals("BeanShellPreProcessor")) {
             return new BeanShellPreProcessorBuilder();
         } else if (name.equals("CounterConfig")) {
@@ -94,8 +91,6 @@ public class BuilderFactory {
             return new FlexibleFileWriterBuilder();
         } else if (name.equals("BeanShellSampler")) {
             return new BeanShellSamplerBuilder();
-        } else if (name.equals("JSR223Sampler")) {
-            return new JSR223SamplerBuilder();
         } else if (name.equals("JDBCSampler")) {
             return new JDBCSamplerBuilder();
         } else if (name.equals("BackendListener")) {
@@ -108,10 +103,7 @@ public class BuilderFactory {
             return new VariableThroughputTimerBuilder();
         } else if (name.equals("HTTPSamplerProxy")) {
             return new HTTPSamplerProxyBuilder();
-        } else if (name.equals("HTTPSamplerProxy")) {
-            return new HTTPSamplerProxyBuilder();
         }
-
         return null;
     }
 }
