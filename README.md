@@ -1,8 +1,9 @@
 [![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://github.com/emersion/stability-badges#stable)
 
-# JYAML - JMeter Markup Language
- Jyaml /ˈjaməl/ is a framework for designing and building Jmeter scripts with YAML.
+# JYAML - Build JMeter scripts with YAML
+Jyaml /ˈjaməl/ is a framework for designing and building Apache JMeter scripts with YAML. Jyaml improves the experience of JMeter by providing a simple way to build and configure JMeter scripts. It removes the complexity of working with JMeter's scripts in a team environment, no more managing difficult merge conflicts and adds the ability to build composable scripts.
 
+It is a 100% pure Java application built on JMeter's API and uses YAML to serialise data in a human-readable form.
  It is designed to make Jmeter scripts easier to
  * modularize and template
  * integrate into build pipelines
