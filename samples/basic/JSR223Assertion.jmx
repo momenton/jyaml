@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="test plan" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="assert" enabled="false">
+        <stringProp name="TestPlan.comments">sample jsr223 assertion</stringProp>
+        <stringProp name="filename">test</stringProp>
+        <stringProp name="parameters">ABC</stringProp>
+        <stringProp name="cacheKey">key1</stringProp>
+        <stringProp name="script">def(){}</stringProp>
+        <stringProp name="scriptLanguage">groovy</stringProp>
+      </JSR223Assertion>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

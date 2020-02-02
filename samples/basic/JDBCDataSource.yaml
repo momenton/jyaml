@@ -1,0 +1,19 @@
+TestPlan:
+  name: test plan
+  JDBCDataSource:
+    name: data source
+    enabled: false
+    comment: sample data element
+    autoCommit: true
+    checkQuery: SELECT 1
+    dbUrl: jdbcdriver
+    connectionAge: 12
+    password: dummy
+    driver: sqlserver
+    keepAlive: true
+    poolMax: 100
+    timeout: 10
+    transactionIsolation: default
+    trimInterval: 100
+    dataSource: data
+    userName: test

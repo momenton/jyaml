@@ -36,6 +36,9 @@ class JmxBuilder {
         JMeterUtils.initLocale();
 
         String outputFileName = args.output;
+        if (outputFileName == null){
+            outputFileName = args.input.replace(".yaml","").replace(".yml","")+ ".jmx";
+        }
         InputStream inputstream = new FileInputStream(args.input);
         Map<String, Object> yaml = (new Yaml()).load(inputstream);
 

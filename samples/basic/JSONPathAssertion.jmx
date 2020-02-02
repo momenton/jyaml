@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="test plan" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="assert" enabled="false">
+        <stringProp name="TestPlan.comments">test assertion</stringProp>
+        <stringProp name="JSON_PATH">test</stringProp>
+        <stringProp name="EXPECTED_VALUE">ABC</stringProp>
+        <boolProp name="JSONVALIDATION">true</boolProp>
+        <boolProp name="EXPECT_NULL">true</boolProp>
+        <boolProp name="INVERT">true</boolProp>
+        <boolProp name="ISREGEX">true</boolProp>
+      </JSONPathAssertion>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

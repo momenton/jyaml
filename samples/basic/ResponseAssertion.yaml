@@ -1,0 +1,13 @@
+TestPlan:
+  name: test plan
+  ResponseAssertion:
+    name: assert
+    enabled: false
+    comment: sample response assertion
+    assumeSuccess: true
+    useOr: true
+    useNot: true
+    matchingRule: equals
+    fieldTest: responsecode
+    testStrings:
+      - 200

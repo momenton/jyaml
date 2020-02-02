@@ -35,5 +35,5 @@ gradlew clean jacocoTestReport
 ## Usage
 To create a Jmeter script from an yaml:
 ```
-gradlew buildJmx --input pnv.yaml --output pnv.jmx
+gradlew buildJmx --args="--i ./samples/basic/TestPlan.yaml --o ./samples/basic/TestPlan.jmx"
 ```

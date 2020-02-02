@@ -1,0 +1,8 @@
+TestPlan:
+  name: test plan
+  UserDefinedVariables:
+    name: variables
+    enabled: false
+    comment: sample variables
+    UserVariables:
+      - test: 123a

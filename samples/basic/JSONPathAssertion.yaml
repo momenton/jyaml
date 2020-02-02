@@ -1,0 +1,12 @@
+TestPlan:
+  name: test plan
+  JSONPathAssertion:
+    name: assert
+    enabled: false
+    comment: test assertion
+    jsonPath: test
+    expectedValue: ABC
+    jsonValidation: true
+    expectNull: true
+    invert: true
+    isRegEx: true

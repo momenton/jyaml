@@ -13,11 +13,12 @@ public class JmxBuilderArgs {
     @Parameter(names = {"-input", "--i"}, description = "Input yaml")
     public String input = "test.yaml";
 
+
     /**
      * Output file name
      */
     @Parameter(names = {"-output", "--o"}, description = "Output script")
-    public String output = "test.jmx";
+    public String output;
 
     /**
      * Home directory for jmeter

@@ -9,6 +9,7 @@ import org.apache.jmeter.testelement.TestElement;
 
 @NoArgsConstructor
 public class JSONPathAssertionBuilder implements Builder {
+
     @Setter
     private String name;
     @Setter

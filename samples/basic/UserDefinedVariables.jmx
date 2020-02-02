@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="test plan" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="variables" enabled="false">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="test" elementType="Argument">
+            <stringProp name="Argument.name">test</stringProp>
+            <stringProp name="Argument.value">123a</stringProp>
+          </elementProp>
+        </collectionProp>
+        <stringProp name="TestPlan.comments">sample variables</stringProp>
+      </Arguments>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

@@ -1,0 +1,11 @@
+TestPlan:
+  name: test plan
+  JSR223Assertion:
+    name: assert
+    enabled: false
+    comment: sample jsr223 assertion
+    fileName: test
+    parameters: ABC
+    scriptLanguage: groovy
+    cacheKey: key1
+    script:  def(){}

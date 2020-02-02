@@ -1,0 +1,10 @@
+TestPlan:
+  name: Test PLan
+  comment: Sample test plan
+  functionalMode: false
+  tearDownOnShutdown: false
+  serialized: false
+  enabled: false
+  UserVariables:
+    - App: Sampler
+    - Version: 0.1

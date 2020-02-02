@@ -9,7 +9,6 @@ build/
 .mtj.tmp/
 build
 .gradle
-*.jmx
 
 *.war
 *.nar

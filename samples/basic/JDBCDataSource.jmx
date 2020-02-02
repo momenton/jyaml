@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="test plan" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="data source" enabled="false">
+        <stringProp name="TestPlan.comments">sample data element</stringProp>
+        <stringProp name="dataSource">data</stringProp>
+        <stringProp name="dbUrl">jdbcdriver</stringProp>
+        <stringProp name="driver">sqlserver</stringProp>
+        <stringProp name="username">test</stringProp>
+        <stringProp name="password">dummy</stringProp>
+        <stringProp name="transactionIsolation">default</stringProp>
+        <stringProp name="timeout">10</stringProp>
+        <boolProp name="autocommit">true</boolProp>
+        <stringProp name="checkQuery">SELECT 1</stringProp>
+        <stringProp name="connectionAge">12</stringProp>
+        <boolProp name="keepAlive">true</boolProp>
+        <stringProp name="poolMax">100</stringProp>
+        <stringProp name="trimInterval">100</stringProp>
+      </JDBCDataSource>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
