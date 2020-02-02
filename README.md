@@ -7,18 +7,25 @@
  * modularize and template
  * integrate into build pipelines
  * simplify management and workflow of scripts
+ 
+ Check out the [wiki](https://github.com/momenton/jyaml/wiki) for more details, getting started and technical details. 
+ 
 
 ## Prerequistes
 
 * Java 1.8+
 * Gradle
+* Git
 
 ## Building
-
-To compile:
+Clone JYAML repo:
 ```
 git clone https://github.com/momenton/jyaml.git
 cd jyaml
+```
+
+To compile:
+```
 gradlew clean compileJava
 ```
 
