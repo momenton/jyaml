@@ -30,7 +30,7 @@ public class JSR223AssertionBuilder implements Builder {
     @Setter
     private String scriptLanguage;
     @Setter
-    private String cacheKey;
+    private Boolean cacheKey;
     @Setter
     private String script;
 

@@ -49,7 +49,7 @@ class JSR223AssertionBuilderSpec extends Specification {
                 fileName: test
                 parameters: ABC
                 scriptLanguage: groovy 
-                cacheKey: key1 
+                cacheKey: true
                 script:  def(){}
               """
 
@@ -63,7 +63,7 @@ class JSR223AssertionBuilderSpec extends Specification {
         testPlan.contains(JMeterTestUtils.getTestNameAttribute(name))
         testPlan.contains(JMeterTestUtils.getEnabledAttribute(false))
         testPlan.contains(JMeterTestUtils.getStringPropertyElement(JSR223Assertion.COMMENTS, comment))
-        testPlan.contains(JMeterTestUtils.getStringPropertyElement(JSR223AssertionBuilder.CACHE_KEY, "key1"))
+        testPlan.contains(JMeterTestUtils.getBooleanPropertyElement(JSR223AssertionBuilder.CACHE_KEY, true))
         testPlan.contains(JMeterTestUtils.getStringPropertyElement(JSR223AssertionBuilder.PARAMETERS, "ABC"))
         testPlan.contains(JMeterTestUtils.getStringPropertyElement(JSR223AssertionBuilder.FILENAME, "test"))
         testPlan.contains(JMeterTestUtils.getStringPropertyElement(JSR223AssertionBuilder.SCRIPT, "def(){}"))

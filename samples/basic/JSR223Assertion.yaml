@@ -7,5 +7,5 @@ TestPlan:
     fileName: test
     parameters: ABC
     scriptLanguage: groovy
-    cacheKey: key1
+    cacheKey: true
     script:  def(){}
