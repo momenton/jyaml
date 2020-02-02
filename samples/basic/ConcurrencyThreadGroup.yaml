@@ -1,0 +1,14 @@
+TestPlan:
+  name: test plan
+  ConcurrencyThreadGroup:
+    name: thread group
+    enabled: false
+    comment: sample concurrency thread group
+    steps: 1
+    units: s
+    targetLevel: 5
+    hold: 10
+    logFilename: test.log
+    iterations: 5
+    rampUp: 1
+    onSampleError: continue

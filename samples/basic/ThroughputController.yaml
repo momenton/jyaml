@@ -1,0 +1,10 @@
+TestPlan:
+  name: test plan
+  ThroughputController:
+    name: throughput controller
+    enabled: false
+    comment: sample throughput controller
+    style: percent
+    percentThroughput: 10
+    maxThroughput: 40
+    perThread: true

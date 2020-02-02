@@ -1,0 +1,7 @@
+TestPlan:
+  name: test plan
+  ConstantTimer:
+    name: timer
+    enabled: false
+    comment: constant timer
+    delay: 123

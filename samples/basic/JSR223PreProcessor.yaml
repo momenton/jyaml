@@ -1,0 +1,11 @@
+TestPlan:
+  name: test plan
+  JSR223PreProcessor:
+    name: jsr223 preprocessor
+    enabled: false
+    comment: sample jsr223 preprocessor
+    fileName: test.txt
+    parameters: ABC
+    cacheKey: D
+    script: func()
+    scriptLanguage: groovy

@@ -1,0 +1,10 @@
+TestPlan:
+  name: test plan
+  BeanShellPostProcessor:
+    name: bean shell post processor
+    enabled: false
+    comment: sample bean shell post processor
+    fileName: test.txt
+    parameters: ABC
+    resetInterpreter: true
+    script: def(){}

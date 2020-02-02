@@ -1,0 +1,6 @@
+TestPlan:
+  name: test plan
+  ViewResultsTree:
+    name: view results
+    enabled: false
+    comment: sample view results

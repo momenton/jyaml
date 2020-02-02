@@ -1,0 +1,13 @@
+TestPlan:
+  name: test plan
+  CounterConfig:
+    name: config
+    enabled: false
+    comment: sample counter config
+    start: 0
+    end: 1
+    incr: 1
+    format: "##"
+    referenceName: A
+    perUser: true
+    resetOnThreadGroupIteration: true

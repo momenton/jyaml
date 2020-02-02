@@ -1,0 +1,7 @@
+TestPlan:
+  name: test plan
+  RandomController:
+    name: random controller
+    enabled: false
+    comment: sample random controller
+    ignoreSubControllerBlocks: true

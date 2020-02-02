@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="test plan" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="jdbc sampler" enabled="false">
+        <stringProp name="TestPlan.comments">sample jdbc sampler</stringProp>
+        <stringProp name="dataSource">A</stringProp>
+        <stringProp name="query">SELECT 1</stringProp>
+        <stringProp name="queryArguments">B</stringProp>
+        <stringProp name="queryArgumentsTypes">C</stringProp>
+        <stringProp name="queryTimeout">0</stringProp>
+        <stringProp name="queryType">SELECT</stringProp>
+        <stringProp name="resultSetHandler">D</stringProp>
+        <stringProp name="resultVariable">E</stringProp>
+        <stringProp name="variableNames">F</stringProp>
+      </JDBCSampler>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

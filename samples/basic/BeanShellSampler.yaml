@@ -1,0 +1,10 @@
+TestPlan:
+  name: test plan
+  BeanShellSampler:
+    name: bean shell sampler
+    enabled: false
+    comment: sample bean shell sampler
+    fileName: test.txt
+    parameters: ABC
+    resetInterpreter: true
+    script: func()

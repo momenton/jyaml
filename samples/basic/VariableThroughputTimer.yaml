@@ -1,0 +1,10 @@
+TestPlan:
+  name: test plan
+  VariableThroughputTimer:
+    name: timer
+    enabled: false
+    comment: sample variable throughput timer
+    Schedule:
+      - start: 0
+        end: 1
+        duration: 12

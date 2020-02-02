@@ -1,0 +1,10 @@
+TestPlan:
+  name: test plan
+  BeanShellPreProcessor:
+    name: bean shell preprocessor
+    enabled: false
+    comment: sample bean shell preprocessor
+    fileName: test.txt
+    parameters: ABC
+    resetInterpreter: true
+    script: func()

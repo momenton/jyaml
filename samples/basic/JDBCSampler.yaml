@@ -1,0 +1,15 @@
+TestPlan:
+  name: test plan
+  JDBCSampler:
+    name: jdbc sampler
+    enabled: false
+    comment: sample jdbc sampler
+    dataSource: A
+    query: SELECT 1
+    queryArgumnents: B
+    queryArgumnentsTypes: C
+    queryTimeout: 0
+    queryType: SELECT
+    resultSetHandler: D
+    resultVariable: E
+    variableNames: F

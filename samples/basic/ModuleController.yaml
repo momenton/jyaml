@@ -1,0 +1,10 @@
+TestPlan:
+  name: test plan
+  ModuleController:
+    name: module contoller
+    enabled: false
+    comment: sample module controller
+    testPlanName: testpm
+    threadGroupName: threadgn
+    controllerName: ctl
+    parentControllerName: pctl

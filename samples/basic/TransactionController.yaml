@@ -1,0 +1,8 @@
+TestPlan:
+  name: test plan
+  TransactionController:
+    name: transaction controller
+    enabled: false
+    comment: sample transaction controller
+    includeTimers: true
+    generateParentSample: true

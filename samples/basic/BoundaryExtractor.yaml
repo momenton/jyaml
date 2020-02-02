@@ -1,0 +1,13 @@
+TestPlan:
+  name: test plan
+  BoundaryExtractor:
+    name: extractor
+    enabled: false
+    comment: sample boundary extractor
+    refName: A
+    leftBoundary: "["
+    rightBoundary: "]"
+    defaultValue: B
+    defaultEmptyValue: true
+    matchNumber: 32
+    useHeaders: true

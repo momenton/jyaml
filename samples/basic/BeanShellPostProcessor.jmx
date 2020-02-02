@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="test plan" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="bean shell post processor" enabled="false">
+        <stringProp name="TestPlan.comments">sample bean shell post processor</stringProp>
+        <boolProp name="resetInterpreter">true</boolProp>
+        <stringProp name="parameters">ABC</stringProp>
+        <stringProp name="filename">test.txt</stringProp>
+        <stringProp name="script">def(){}</stringProp>
+      </BeanShellPostProcessor>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

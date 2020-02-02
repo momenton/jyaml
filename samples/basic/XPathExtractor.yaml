@@ -1,0 +1,13 @@
+TestPlan:
+  name: test plan
+  XPathExtractor:
+    name: extractor
+    enabled: false
+    comment: sample xpath extractor
+    refName: "A"
+    defaultValue: "B"
+    matchNumber: "32"
+    xpathQuery: "C"
+    validate: true
+    tolerant: true
+    namespace: true

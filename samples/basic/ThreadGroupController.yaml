@@ -1,0 +1,15 @@
+TestPlan:
+  name: test plan
+  ThreadGroup:
+    name: thread group
+    enabled: false
+    comment: sample thread group controller
+    numThreads: 1
+    rampUp: 1
+    duration: 10
+    delay: 10
+    loops: 1
+    continueForever: false
+    delayedStart: true
+    scheduler: true
+    onSampleError: continue

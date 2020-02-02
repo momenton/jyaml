@@ -1,0 +1,29 @@
+TestPlan:
+  name: test plan
+  HTTPSamplerProxy:
+    name: HTTP Sampler
+    enabled: false
+    comment: sample HTTP sampler proxy
+    postBodyRaw: true
+    followRedirects: true
+    autoRedirects: true
+    useKeepAlive: true
+    doMultiPartPost: true
+    port: 8443
+    domain: google.com
+    protocol: https
+    contentEncoding: json
+    path: test
+    method: GET
+    embeddedUrlRe: a
+    connectTimeout: 10
+    responseTimeout: 10
+    requestBody: body
+    concurrentPool: 100
+    proxyHost: google.com
+    proxyPort: 8443
+    proxyUser: dummy
+    proxyPass: "****"
+    implementation: HttpClient
+    parameters:
+      - test: 123

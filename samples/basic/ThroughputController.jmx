@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="test plan" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="throughput controller" enabled="false">
+        <intProp name="ThroughputController.style">1</intProp>
+        <boolProp name="ThroughputController.perThread">true</boolProp>
+        <stringProp name="ThroughputController.maxThroughput">40</stringProp>
+        <stringProp name="ThroughputController.percentThroughput">10</stringProp>
+        <stringProp name="TestPlan.comments">sample throughput controller</stringProp>
+      </ThroughputController>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

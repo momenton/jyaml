@@ -1,0 +1,11 @@
+TestPlan:
+  name: test plan
+  FlexibleFileWriter:
+    name: file writer
+    enabled: false
+    comment: sample file writer
+    fileName: test.txt
+    header: A
+    footer: B
+    columns: C
+    overwrite: true

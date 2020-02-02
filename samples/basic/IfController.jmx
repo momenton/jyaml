@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="test plan" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <IfController guiclass="IfControllerPanel" testclass="IfController" testname="if?" enabled="false">
+        <stringProp name="TestPlan.comments">sample if controller</stringProp>
+        <stringProp name="IfController.condition">if 1 = 1</stringProp>
+        <boolProp name="IfController.evaluateAll">true</boolProp>
+        <boolProp name="IfController.useExpression">true</boolProp>
+      </IfController>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

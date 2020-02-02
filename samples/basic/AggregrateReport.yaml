@@ -1,0 +1,6 @@
+TestPlan:
+  name: test plan
+  AggregrateReport:
+    name: reporter
+    enabled: false
+    comment: sample aggregrate reporter

@@ -1,0 +1,10 @@
+TestPlan:
+  name: test plan
+  BackendListener:
+    name: listener
+    enabled: false
+    comment: sample backend listener
+    className: org
+    queueSize: 1
+    Arguments:
+      - test: 123a

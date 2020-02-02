@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="test plan" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler" enabled="false">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="" elementType="HTTPArgument">
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+              <stringProp name="Argument.value">body</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </elementProp>
+        <stringProp name="TestPlan.comments">sample HTTP sampler proxy</stringProp>
+        <stringProp name="HTTPSampler.domain">google.com</stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding">json</stringProp>
+        <stringProp name="HTTPSampler.path">test</stringProp>
+        <stringProp name="HTTPSampler.method">GET</stringProp>
+        <stringProp name="HTTPSampler.response_timeout">10</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout">10</stringProp>
+        <stringProp name="HTTPSampler.embedded_url_re">a</stringProp>
+        <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+        <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+        <stringProp name="HTTPSampler.concurrentPool">100</stringProp>
+        <stringProp name="HTTPSampler.proxyHost">google.com</stringProp>
+        <stringProp name="HTTPSampler.proxyPort">8443</stringProp>
+        <stringProp name="HTTPSampler.proxyUser">dummy</stringProp>
+        <stringProp name="HTTPSampler.proxyPass">****</stringProp>
+        <stringProp name="HTTPSampler.implementation">HttpClient</stringProp>
+        <stringProp name="HTTPSampler.port">8443</stringProp>
+      </HTTPSamplerProxy>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

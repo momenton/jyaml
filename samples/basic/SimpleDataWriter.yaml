@@ -1,0 +1,7 @@
+TestPlan:
+  name: test plan
+  SimpleDataWriter:
+    name: writer
+    enabled: false
+    comment: sample simple data writer
+    fileName: test.txt

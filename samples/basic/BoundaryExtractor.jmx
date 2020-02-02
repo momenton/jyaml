@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="test plan" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="extractor" enabled="false">
+        <stringProp name="TestPlan.comments">sample boundary extractor</stringProp>
+        <stringProp name="BoundaryExtractor.refname">A</stringProp>
+        <stringProp name="BoundaryExtractor.lboundary">[</stringProp>
+        <stringProp name="BoundaryExtractor.rboundary">]</stringProp>
+        <boolProp name="BoundaryExtractor.default_empty_value">true</boolProp>
+        <stringProp name="BoundaryExtractor.default">B</stringProp>
+        <stringProp name="BoundaryExtractor.match_number">32</stringProp>
+        <stringProp name="BoundaryExtractor.useHeaders">true</stringProp>
+      </BoundaryExtractor>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

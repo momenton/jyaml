@@ -1,0 +1,8 @@
+TestPlan:
+  name: test plan
+  LoopController:
+    name: loop controller
+    enabled: false
+    comment: sample loop controller
+    loops: 10
+    continueForever: false

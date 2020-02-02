@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="test plan" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="module contoller" enabled="false">
+        <stringProp name="TestPlan.comments">sample module controller</stringProp>
+        <collectionProp name="ModuleController.node_path">
+          <stringProp name="764597751">testpm</stringProp>
+          <stringProp name="-1504026899">threadgn</stringProp>
+          <stringProp name="-2099909926">pctl</stringProp>
+          <stringProp name="-1187124224">ctl</stringProp>
+        </collectionProp>
+      </ModuleController>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

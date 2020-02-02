@@ -1,0 +1,10 @@
+TestPlan:
+  name: test plan
+  JSONPostProcessor:
+    name: json post processor
+    enabled: false
+    comment: sample json post processor
+    referenceNames: "A"
+    jsonPathExpression: "B"
+    matchNumber: "32"
+    defaultValues: "C"

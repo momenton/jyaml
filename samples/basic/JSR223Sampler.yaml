@@ -1,0 +1,11 @@
+TestPlan:
+  name: test plan
+  JSR223Sampler:
+    name: JSR223 sampler
+    enabled: false
+    comment: sample jsr223 sampler
+    fileName: test.txt
+    parameters: ABC
+    scriptLanguage: groovy
+    script: func()
+    cacheKey: key

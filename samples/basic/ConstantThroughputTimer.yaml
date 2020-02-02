@@ -1,0 +1,8 @@
+TestPlan:
+  name: test plan
+  ConstantThroughputTimer:
+    name: timer
+    enabled: false
+    comment: sample constant throughput timer
+    throughput: 12
+    calcMode: 1

@@ -1,0 +1,8 @@
+TestPlan:
+  name: test plan
+  HeaderManager:
+    name: headers
+    enabled: false
+    comment: sample header manager
+    Headers:
+      - EXPIRES: -1
