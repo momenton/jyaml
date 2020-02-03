@@ -1,7 +1,8 @@
 [![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://github.com/emersion/stability-badges#stable)
 
 # JYAML - Build JMeter scripts with YAML
-Jyaml /ˈjaməl/ is a framework for designing and building Apache JMeter scripts with YAML. It is a 100% pure Java application built on JMeter's API and uses YAML to serialise JMeter's JMX scripts in a human-readable form.
+Jyaml /ˈjaməl/ is a framework for designing and building Apache JMeter scripts with YAML. It is a 100% pure Java application built
+on JMeter's API and uses YAML to represent JMeter's JMX scripts in a human-readable form.
 
 Jyaml improves the experience of JMeter by providing a simple way to build and configure composable JMeter scripts. It removes the complexity of working with JMeter's scripts, no more managing difficult merge conflicts and adds the ability to build composable scripts. Automation is simplified as you just need to work with YAML instead of having to configure JMeter's jmx files.
 
