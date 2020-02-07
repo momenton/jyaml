@@ -1,5 +1,6 @@
 [![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://github.com/emersion/stability-badges#stable)
 [![codecov](https://codecov.io/gh/momenton/jyaml/branch/master/graph/badge.svg)](https://codecov.io/gh/momenton/jyaml)
+[![Build Status](https://travis-ci.org/momenton/jyaml.svg?branch=master)](https://travis-ci.org/momenton/jyaml)
 
 # JYAML - Build JMeter scripts with YAML
 Jyaml /ˈjaməl/ is a framework for designing and building Apache JMeter scripts with YAML. It is a 100% pure Java application built
