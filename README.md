@@ -8,7 +8,6 @@ on JMeter's API and uses YAML to represent JMeter's JMX scripts in a human-reada
 Jyaml improves the experience of JMeter by providing a simple way to build and configure composable JMeter scripts. It removes the complexity of working with JMeter's scripts, no more managing difficult merge conflicts and adds the ability to build composable scripts. Automation is simplified as you just need to work with YAML instead of having to configure JMeter's jmx files.
 
 Check out the [wiki](https://github.com/momenton/jyaml/wiki) for more details, getting started and technical details. 
- 
 
 ## Prerequistes
 
