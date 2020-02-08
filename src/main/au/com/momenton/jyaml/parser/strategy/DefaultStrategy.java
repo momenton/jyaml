@@ -3,6 +3,8 @@ package au.com.momenton.jyaml.parser.strategy;
 import au.com.momenton.jyaml.jmeter.Builder;
 import au.com.momenton.jyaml.jmeter.BuilderFactory;
 import org.apache.jmeter.testelement.TestElement;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.LinkedHashMap;
 import java.lang.reflect.InvocationTargetException;
@@ -11,6 +13,8 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 public class DefaultStrategy implements Strategy {
+
+    static final Logger logger = LogManager.getLogger(DefaultStrategy.class.getName());
 
     protected final Builder builder;
 
@@ -59,9 +63,9 @@ public class DefaultStrategy implements Strategy {
                 method.invoke(builder, value);
             }
         } catch (NoSuchMethodException nsm) {
-            System.out.println("No such method " + nsm.getMessage());
+            logger.warn("No such method " + nsm.getMessage());
         } catch (IllegalAccessException | InvocationTargetException iae) {
-            System.out.println("Access issue " + iae.getMessage());
+            logger.warn("Access issue " + iae.getMessage());
 
         }
     }

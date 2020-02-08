@@ -5,7 +5,7 @@
 *.ctxt
 .idea/
 build/
-
+apache-jmeter-5.2.1/backups/
 .mtj.tmp/
 build
 .gradle

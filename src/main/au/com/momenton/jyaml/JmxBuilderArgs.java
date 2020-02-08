@@ -11,8 +11,13 @@ public class JmxBuilderArgs {
      * Input yaml
      */
     @Parameter(names = {"-input", "--i"}, description = "Input yaml")
-    public String input = "test.yaml";
+    public String input;
 
+    /**
+     * Config yaml
+     */
+    @Parameter(names = {"-config", "--c"}, description = "Config yaml")
+    public String config;
 
     /**
      * Output file name
