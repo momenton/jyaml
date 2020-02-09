@@ -33,9 +33,11 @@ public abstract class YamlParser {
 
         Map<String, Object> context = new HashMap<>();
         if (configFile != null){
-            try(FileInputStream config = new FileInputStream(configFile)) {
+            try{
+                Path configPath = Paths.get(configFile);
+                String config = new String(Files.readAllBytes(configPath));
                 context = (new Yaml()).load(config);
-            } catch(Exception ex){
+            } catch(IOException ex){
                 logger.error("Config file does not exist " +configFile );
                 throw new IllegalArgumentException("Config file does not exist");
             }
