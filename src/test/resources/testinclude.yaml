@@ -1,0 +1,3 @@
+TestPlan:
+  name: Test
+{% include 'resources/test/uservariables.yaml' %}

@@ -7,7 +7,7 @@ import org.apache.jorphan.collections.HashTree;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.yaml.snakeyaml.Yaml;
-
+import java.lang.IllegalArgumentException;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -45,37 +45,17 @@ class JmxBuilder {
             outputFileName = args.input.replace(".yaml","").replace(".yml","")+ ".jmx";
         }
 
-        Map<String, Object> context = new HashMap<>();
-        if (args.config != null){
-            try(FileInputStream config = new FileInputStream(args.config)) {
-                context = (new Yaml()).load(config);
-            } catch(Exception ex){
-                logger.error("Config file does not exist");
-                System.exit(1);
-            }
-        }
-
-        Path path = FileSystems.getDefault().getPath(args.input);
-        if (!Files.exists(path)) {
-            logger.error("Input file does not exist");
-            System.exit(1);
-        }
-
-        String input = new String(Files.readAllBytes(path));
-        Jinjava jinjava = new Jinjava();
-        jinjava.setResourceLocator(new FileLocator());
-        String inputPreProcessed = jinjava.render(input,context);
-
-        Map<String, Object> yaml = (new Yaml()).load(inputPreProcessed);
-        HashTree jmxRoot = YamlParser.parse(yaml);
-
         try {
+            HashTree jmxRoot = YamlParser.parse(args.input, args.config);
             SaveService.loadProperties();
             SaveService.saveTree(jmxRoot, new FileOutputStream(outputFileName));
         } catch (IOException ex) {
             logger.error("Failed to build jmx file");
             System.exit(1);
+        } catch (IllegalArgumentException iae) {
+            System.exit(1);
         }
+
         System.exit(0);
     }
 

@@ -29,12 +29,6 @@ public class BackendListenerBuilder implements Builder {
     @Setter
     private String queueSize;
 
-//    public BackendListenerBuilder addArgument(String name, String value) {
-//        this.arguments.add(new Argument(name, value));
-//        return this;
-//
-//    }
-
     public TestElement build() {
 
         BackendListener listener = new BackendListener();

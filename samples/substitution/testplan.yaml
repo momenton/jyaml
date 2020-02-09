@@ -1,0 +1,5 @@
+TestPlan:
+  name: {{ name }}
+  comment: {{comment}}
+  UserVariables:
+    - App: {{App.name}}

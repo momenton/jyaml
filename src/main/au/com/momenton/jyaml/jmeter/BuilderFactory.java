@@ -30,7 +30,7 @@ import au.com.momenton.jyaml.jmeter.timer.ConstantTimerBuilder;
 import au.com.momenton.jyaml.jmeter.timer.VariableThroughputTimerBuilder;
 import au.com.momenton.jyaml.jmeter.visualizers.BackendListenerBuilder;
 
-public class BuilderFactory {
+public abstract class BuilderFactory {
 
     public static Builder getBuilder(String name) {
         if (name.equals("TestPlan")) {

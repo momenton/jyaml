@@ -1,0 +1,3 @@
+TestPlan:
+  name: test plan
+{% include 'samples/include/uservariables.yaml' %}

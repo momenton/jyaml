@@ -1,7 +1,7 @@
 package au.com.momenton.jyaml.parser.strategy;
 
 
-public class StrategyFactory {
+public abstract class StrategyFactory {
     public static Strategy getStrategy(String name) {
         if (name.equals("TestPlan")) {
             return new TestPlanStrategy(name);
@@ -13,6 +13,8 @@ public class StrategyFactory {
             return new HeaderManagerStrategy(name);
         } else if (name.equals("VariableThroughputTimer")) {
             return new VariableThroughputTimerStrategy(name);
+        } else if (name.equals("BackendListener")) {
+            return new BackendListenerStrategy(name);
         }
         return new DefaultStrategy(name);
     }
