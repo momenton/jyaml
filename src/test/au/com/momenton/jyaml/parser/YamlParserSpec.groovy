@@ -7,6 +7,9 @@ import org.apache.jorphan.collections.HashTree
 import org.yaml.snakeyaml.Yaml
 import spock.lang.Specification
 import java.lang.IllegalArgumentException
+import spock.lang.Ignore
+import spock.lang.IgnoreIf
+import spock.lang.Requires
 
 class YamlParserSpec extends Specification {
 
@@ -14,7 +17,8 @@ class YamlParserSpec extends Specification {
         JMeterTestUtils.init()
     }
 
-    /*
+
+    @Requires({ System.getProperty('OS').contains('windows') })
     def "parse successfully substitutes variables"() {
         given:
         String input = getClass().getResource('/testsubstitution.yaml').getFile()
@@ -30,7 +34,7 @@ class YamlParserSpec extends Specification {
         testPlan.contains(JMeterTestUtils.getTestNameAttribute("Test"))
         testPlan.contains(JMeterTestUtils.getEnabledAttribute(true))
     }
-    */
+
     def "parse errors for missing input file"() {
         given:
         String input = '/missing.yaml'
@@ -43,7 +47,8 @@ class YamlParserSpec extends Specification {
         IllegalArgumentException ex = thrown()
         ex.message == 'Failed to read Input file'
     }
-    /*
+
+    @Requires({ System.getProperty('OS').contains('windows') })
     def "parse successful for no config file "() {
         given:
         String input = getClass().getResource('/testsimple.yaml').getFile()
@@ -57,7 +62,6 @@ class YamlParserSpec extends Specification {
         testPlan.contains(JMeterTestUtils.getTestNameAttribute("Test"))
         testPlan.contains(JMeterTestUtils.getEnabledAttribute(true))
     }
-    */
 
     def "parse errors for missing config file"() {
         String input = getClass().getResource('/testsimple.yaml').getFile()
@@ -70,8 +74,6 @@ class YamlParserSpec extends Specification {
         then:
         IllegalArgumentException ex = thrown()
         ex.message == 'Config file does not exist'
-
     }
-
 
 }
