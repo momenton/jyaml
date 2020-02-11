@@ -57,6 +57,10 @@ public class JMeterTestUtils {
     public static String getFloatPropertyElement(String name, float value) {
         return " <FloatProperty><name>" + name + "</name><value>" + value + "</value>";
     }
+    public static String getDoublePropertyElement(String name, double value) {
+        return "<name>" + name + "</name><value>" + value + "</value>";
+    }
+
 
     public static String save(TestElement element) {
 

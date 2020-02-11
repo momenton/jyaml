@@ -29,7 +29,9 @@ import au.com.momenton.jyaml.jmeter.timer.ConstantThroughputTimerBuilder;
 import au.com.momenton.jyaml.jmeter.timer.ConstantTimerBuilder;
 import au.com.momenton.jyaml.jmeter.timer.JSR223TimerBuilder;
 import au.com.momenton.jyaml.jmeter.timer.SyncTimerBuilder;
+import au.com.momenton.jyaml.jmeter.timer.BeanShellTimerBuilder;
 import au.com.momenton.jyaml.jmeter.timer.UniformRandomTimerBuilder;
+import au.com.momenton.jyaml.jmeter.timer.PreciseThroughputTimerBuilder;
 import au.com.momenton.jyaml.jmeter.timer.PoissonRandomTimerBuilder;
 import au.com.momenton.jyaml.jmeter.timer.GaussianRandomTimerBuilder;
 import au.com.momenton.jyaml.jmeter.timer.VariableThroughputTimerBuilder;
@@ -80,6 +82,8 @@ public abstract class BuilderFactory {
             return new TransactionControllerBuilder();
         } else if (name.equals("BeanShellPostProcessor")) {
             return new BeanShellPostProcessorBuilder();
+        } else if (name.equals("BeanShellTimer")) {
+            return new BeanShellTimerBuilder();
         } else if (name.equals("BoundaryExtractor")) {
             return new BoundaryExtractorBuilder();
         } else if (name.equals("JSONPostProcessor")) {
@@ -104,6 +108,8 @@ public abstract class BuilderFactory {
             return new ConstantTimerBuilder();
         } else if (name.equals("UniformRandomTimer")) {
             return new UniformRandomTimerBuilder();
+        } else if (name.equals("PreciseThroughputTimer")) {
+            return new PreciseThroughputTimerBuilder();
         } else if (name.equals("PoissonRandomTimer")) {
             return new PoissonRandomTimerBuilder();
         } else if (name.equals("GaussianRandomTimer")) {

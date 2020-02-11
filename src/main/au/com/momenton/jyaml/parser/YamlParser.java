@@ -55,8 +55,6 @@ public abstract class YamlParser {
         Jinjava jinjava = new Jinjava();
         jinjava.setResourceLocator(new FileLocator());
         String inputPreProcessed = jinjava.render(input,context);
-
-        System.out.println(inputPreProcessed );
         Map<String, Object> yaml = (new Yaml()).load(inputPreProcessed);
 
         HashTree jmxRoot = new ListedHashTree();
@@ -81,6 +79,10 @@ public abstract class YamlParser {
         } else if (value instanceof Integer) {
             props.put(key, value);
         } else if (value instanceof Boolean) {
+            props.put(key, value);
+        } else if (value instanceof Float) {
+            props.put(key, value);
+        } else if (value instanceof Double) {
             props.put(key, value);
         } else if (value instanceof LinkedHashMap) {
             LinkedHashMap<String, Object> map = (LinkedHashMap) value;
