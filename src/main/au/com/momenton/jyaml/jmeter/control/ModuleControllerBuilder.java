@@ -53,7 +53,6 @@ public class ModuleControllerBuilder implements Builder {
             collectionProp.addProperty(prop);
         }
         if (threadGroupName != null) {
-
             prop = new StringProperty();
             prop.setValue(threadGroupName);
             prop.setName(THREAD_GROUP_NAME);

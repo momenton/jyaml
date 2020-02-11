@@ -66,7 +66,6 @@ public class DefaultStrategy implements Strategy {
             logger.warn("No such method " + nsm.getMessage());
         } catch (IllegalAccessException | InvocationTargetException iae) {
             logger.warn("Access issue " + iae.getMessage());
-
         }
     }
 
